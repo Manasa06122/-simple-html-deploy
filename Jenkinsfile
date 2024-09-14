@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Manasa06122/-simple-html-deploy.git'
+                // Specify the main branch explicitly
+                git branch: 'main', url: 'https://github.com/Manasa06122/-simple-html-deploy.git'
             }
         }
 
